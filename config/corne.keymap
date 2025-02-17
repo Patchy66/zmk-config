@@ -12,7 +12,7 @@
 
 
             behaviors {
-        mt: mod-tap-by-hold-tap {
+        mt_impl: mod-tap-by-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_BY_HOLD_TAP";
             #binding-cells = <2>;
