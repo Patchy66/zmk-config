@@ -8,14 +8,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 / {
-
-
-        keymap {
+    behaviors {
+        mt_impl: mod-tap-by-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_BY_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    }; 
+   &mt modkey tapkey = &mt_impl modkey tapkey 
+    keymap {
                 compatible = "zmk,keymap";
                 default_layer {
 // -----------------------------------------------------------------------------------------
