@@ -21,7 +21,6 @@
         };
     };
 
-   &mt modkey tapkey = &mt_impl modkey tapkey 
     keymap {
                 compatible = "zmk,keymap";
                 default_layer {
