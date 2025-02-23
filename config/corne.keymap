@@ -16,7 +16,7 @@
             label = "MOD_TAP_BY_HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -33,9 +33,9 @@
 // | fn   |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | shft| LWR | SPC |   | ENT | RSE  | gui |
                         bindings = <
-   &kp TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC &kp A &mt_impl RALT S  &mt_impl LALT D  &mt_impl LCTL F &kp G &kp H   &mt_impl RCTL J  &mt_impl LALT K  &mt_impl RALT L   &kp SEMI  &kp SQT
-   &mo 3   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LSHFT
+   &kp TAB &kp Q &kp W            &kp E            &kp R           &kp T &kp Y &kp U            &kp I            &kp O             &kp P    &kp BSPC
+   &kp ESC &kp A &mt_impl RALT S  &mt_impl LALT D  &mt_impl LCTL F &kp G &kp H &mt_impl RCTL J  &mt_impl LALT K  &mt_impl RALT L   &kp SEMI &kp SQT
+   &mo 3   &kp Z &kp X            &kp C            &kp V           &kp B &kp N &kp M            &kp COMMA        &kp DOT           &kp FSLH &kp LSHFT
                   &kp LSHFT &mo 1 &kp SPACE   &kp RET &mo 2 &kp LGUI
                         >;
                 };
@@ -44,9 +44,9 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | DEL |      |
-// | F1 |  F2 | F3  |  F4 | F5  | F6  |   | F7  | F8  | F9  | F10  | F11 | F12   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | ESC  |     |     |     |     |     |   | LFT | DWN |  UP | RGT | DEL |      |
+// | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   |     |     |     |     |     |      |
+//                    |LSHFT|     | SPC |   | ENT |     | LGUI|
                         bindings = <
    &kp TAB    &kp N1       &kp N2         &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &kp ESC    &trans       &trans         &kp LALT     &kp LCTL     &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp DEL &trans
