@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
 / {
 
             behaviors {
@@ -48,9 +49,9 @@
 // | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   |     |     |     |     |     |      |
 //                    |LSHFT|     | SPC |   | ENT |     | LGUI|
                         bindings = <
-   &kp TAB    &kp N1       &kp N2         &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &kp ESC    &trans       &trans         &kp LALT     &kp LCTL     &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp DEL &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans &trans    &trans &trans
+   &kp TAB    &kp N1       &kp N2         &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8    &kp N9           &kp N0    &kp BSPC
+   &kp ESC    &trans       &trans         &kp LALT     &kp LCTL     &trans         &kp LEFT &mt_impl RCTL DOWN &mt_impl LALT UP &kp RIGHT &kp DEL &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans    &trans           &trans    &trans
                                     &kp LSHFT     &trans       &kp SPACE      &kp RET  &trans   &kp LGUI
                         >;
                 };
